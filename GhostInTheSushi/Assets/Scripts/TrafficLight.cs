@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrafficLight : MonoBehaviour {
+public class TrafficLight : MonoBehaviour
+{
+
+    public TrafficVehicle.TrafficID TargetAgentType = TrafficVehicle.TrafficID.CAR;
 
     // Is the green light showing
     public bool IsGo = true;
@@ -11,15 +14,17 @@ public class TrafficLight : MonoBehaviour {
     public Light RedLight;
 
     public int SwapTime = 5;
-    private float swapTimer = 0.0f;
+    private float swapTimer = 5.0f;
 
     // Use this for initialization
-    void Awake () {
+    void Start()
+    {
         UpdateLights();
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         swapTimer -= Time.deltaTime;
 
         if (swapTimer <= 0)
@@ -41,7 +46,7 @@ public class TrafficLight : MonoBehaviour {
 
         var trafficAI = other.GetComponent<TrafficVehicle>();
 
-        if (trafficAI)
+        if (trafficAI && trafficAI.TrafficType == TargetAgentType)
         {
             trafficAI.AssignTrafficLight(this);
         }
