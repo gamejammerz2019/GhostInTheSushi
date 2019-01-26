@@ -650,8 +650,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: f4984440-0fd0-43f3-96b2-93d3cab6969b
-  projectName: Story Screen
+  cloudProjectId: 9e59c2ba-0730-47c0-92bd-00a4b0d014e5
+  projectName: Test
   organizationId: itdatboyo
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
