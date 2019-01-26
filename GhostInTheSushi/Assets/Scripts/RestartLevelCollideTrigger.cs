@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
 
-public class RestartTrigger : MonoBehaviour {
+public class RestartLevelCollideTrigger : MonoBehaviour {
 
     private Scene scene;
-    string tag = "FamilyMember";
+    public string tag = "FamilyMember";
     // Use this for initialization
     void Start () {
         scene = SceneManager.GetActiveScene();
@@ -14,8 +15,10 @@ public class RestartTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void OnTriggerEnter (Collider other) {
-        if(other.gameObject.tag == tag)
+
+        if (other.gameObject.tag == tag)
         {
+            Debug.Log("Reload Level");
             Application.LoadLevel(scene.name);
         }	
 	}
