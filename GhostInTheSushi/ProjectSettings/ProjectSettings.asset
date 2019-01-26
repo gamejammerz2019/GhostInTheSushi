@@ -650,9 +650,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: a7cd256b-d55e-4be6-ac6d-ae4dbb0c5597
-  projectName: GhostInTheSushi (1)
-  organizationId: unity_bsrkdx9zdooqog
+  cloudProjectId: f4984440-0fd0-43f3-96b2-93d3cab6969b
+  projectName: Story Screen
+  organizationId: itdatboyo
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
