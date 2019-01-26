@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class TrafficVehicle : MonoBehaviour {
 
+    public enum TrafficID {
+        CAR,
+        PEDESTRIAN
+    }
+
+    public TrafficID TrafficType;
+
     static float ARRIVAL_DISTANCE = 1.0f;
 
     private UnityEngine.AI.NavMeshAgent agent;
