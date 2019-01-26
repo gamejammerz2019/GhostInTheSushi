@@ -5,8 +5,8 @@ using UnityEngine.EventSystems;
 
 public enum State { Alive, Dying };
 
-[RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Rigidbody))]
 public class Destroyable : MonoBehaviour, IPointerClickHandler {
     private Rigidbody rb;
     private Collider col;
