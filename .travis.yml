@@ -1,11 +1,19 @@
 language: objective-c
-osx_image: xcode8.1
+osx_image: xcode8.3
 rvm:
 - 2.2
 before_install:
 - chmod a+x ./Scripts/install.sh
 - chmod a+x ./Scripts/build.sh
 install:
-- ./Scripts/install.sh
+- "./Scripts/install.sh"
 script:
-- ./Scripts/build.sh
+- "./Scripts/build.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: OSKRMJyXu0fFj2tXaTnXSv76XDlTzvBOIG7ZiwkgHk3h28BrUGEaa2Dodi5gb/tEWQN1veo5sJDYylrem7tdbK0UWOIUVccV6rw6jp+igYU0MzGn665baescO0BW9PpSmVuhtPYkOjZWIe4AfkY20DjqMun+VOojB4GZsqEOENtahvAGYBqy42dmKv2owtafwvzxqb+1GJHb7sp0Abr7LfBnQzVFjv2FnhFd/Kr/kdU4oF+kjsKg5vLGRElwLeZAaz6QMKHden2kdHjkfqScUYdrpebQZGgoyXIkr4mg184Cv/r9JYz5gnUpOAsZyFnnqqcqddlBRFPTUSExp5CQrdrOMVIBKvusEYmASB+tciDh+uB9iXKWIYu2ms6q1Cx+MK50zGxJ/p6PY9k/AcXTHRiYKdulS10pDrSAFLpYN2WAbtKxi6jW2zn7kRN0BTLH3Dzqx2eMwoj4A0HjIq47YonzTe5WSiN/oQGHCWwqX9YppyI5N73/DnzVwqoSZ9POB4rzOxN64GVnprkhFagPegeE9t5fSl21iayAIB+9+xOPkVOs3A4nKmZn3SkObK6kozuGUkAcr0PSzyXt/s5wXHfqePFOfoFbWwrRkilMQz18JOxvoizr/rJKepaVdayfuB0FKG8y9wrQsUAzRrX+lygrOZhS9d8uuhHEbyNzIts=
+  file: Build/windows.zip
+  on:
+    repo: gamejammerz2019/GhostInTheSushi
+    tags: true
