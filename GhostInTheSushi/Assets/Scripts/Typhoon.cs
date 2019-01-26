@@ -21,6 +21,5 @@ public class Typhoon : MonoBehaviour {
         curr_gravity.y += y;
         curr_gravity.z += z;
         Physics.gravity = curr_gravity;
-        Debug.Log(Physics.gravity);
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public enum State { Alive, Dying };
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Collider))]
 public class Destroyable : MonoBehaviour, IPointerClickHandler {
     private Rigidbody rb;
     private Collider col;
@@ -40,6 +41,9 @@ public class Destroyable : MonoBehaviour, IPointerClickHandler {
     public void die () {
         // destroy, eventually.
         Destroy(gameObject, deathDuration);
+
+        // Disable collisions, so that we can sink through the ground.
+        GetComponent<Collider>().isTrigger = true;
 
         // sink into the gound.
         float yvel = (col.bounds.size.y * 1.1f) / deathDuration;
