@@ -43261,6 +43261,10 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1007790818967700, guid: a32e87816dccb7743aec7e5024ff2e78, type: 2}
+      propertyPath: m_TagString
+      value: House
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a32e87816dccb7743aec7e5024ff2e78, type: 2}
   m_IsPrefabAsset: 0
