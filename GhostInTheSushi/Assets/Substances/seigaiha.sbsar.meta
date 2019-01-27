@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: 8ba2a9dd0f568df40983032f21a64f14
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: seigaiha/seigaiha
+    400000: seigaiha/seigaiha/Transform
+    2100000: mat.seigaiha
+    2300000: seigaiha/seigaiha/MeshRenderer
+    2800000: seigaiha_baseColor
+    2800002: seigaiha_normal
+    2800004: seigaiha_metallic
+    2800006: seigaiha_ambientOcclusion
+    2800008: seigaiha_height
+    3300000: seigaiha/seigaiha/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: seigaiha/seigaiha/SphereCollider
+    100100000: seigaiha
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: seigaiha
+    prototypeName: seigaiha
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://seigaiha\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: any
+      alphaSource: any
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: seigaiha_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_any
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: seigaiha_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: any
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {instanceID: 0}
+    generatedTextures: []
