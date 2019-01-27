@@ -4,24 +4,25 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: Salmon/Salmon
     400000: Salmon/Salmon/Transform
-    2100000: mat.Salmon
+    2100002: Salmon
     2300000: Salmon/Salmon/MeshRenderer
-    2800000: Salmon_baseColor
-    2800002: Salmon_normal
-    2800004: Salmon_metallic
-    2800006: Salmon_ambientOcclusion
-    2800008: Salmon_height
+    2800010: Salmon - baseColor
+    2800012: Salmon - normal
+    2800014: Salmon - metallic
+    2800016: Salmon - ambientOcclusion
+    2800018: Salmon - height
     3300000: Salmon/Salmon/MeshFilter
     11400000: sbsar
     11400002: graph0
     13500000: Salmon/Salmon/SphereCollider
     100100000: Salmon
+    2186277476908879412: ImportLogs
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
-  version: 13
+  version: 17
   mGraphInstanceData:
   - graphLabel: Salmon
     prototypeName: Salmon
@@ -76,6 +77,34 @@ ScriptedImporter:
       wrapMode: 0
       filterMode: 1
       aniso: 1
+    - textureName: Salmon - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - MetalSmooth
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
     colorSpaceList:
     - outputName: baseColor
       bLinear: 0
@@ -95,10 +124,9 @@ ScriptedImporter:
     targetSettingList:
     - label: 
       bLockRatio: 1
-      bHighQuality: 0
       textureWidth: 256
       textureHeight: 256
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {fileID: 2100000, guid: 91b82ce1a65219743b68bd200611e9ef, type: 3}
+    material: {instanceID: 0}
     generatedTextures: []
