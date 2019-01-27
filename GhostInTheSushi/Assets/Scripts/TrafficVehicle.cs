@@ -26,6 +26,10 @@ public class TrafficVehicle : MonoBehaviour {
     private float suicideTimer = 0;
     private static float SuicideTime = 15;
 
+    public float waitTimer = 0.0f;
+    public float WaitTime = 0.0f;
+    public bool didWait = false;
+
     // Use this for initialization
     void Awake () {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -39,6 +43,18 @@ public class TrafficVehicle : MonoBehaviour {
     }
 	
 	void FixedUpdate () {
+
+        if (waitTimer < WaitTime)
+        {
+            waitTimer += Time.deltaTime;
+            agent.speed = 0;
+            return;
+        }
+        else if (WaitTime > 0 && !didWait)
+        {
+            didWait = true;
+            agent.speed = defaultSpeed;
+        }
 
         // Kill self if not moving for awhile
         if (agent.velocity.magnitude < 0.1f)
