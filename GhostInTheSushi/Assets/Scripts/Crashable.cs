@@ -47,10 +47,6 @@ public class Crashable : MonoBehaviour, IPointerClickHandler {
 
         // add a fire.
         GameObject fire = (GameObject)Instantiate(fireParticles, transform.position, new Quaternion());
-        // move it up a bit.
-        Vector3 offset = fire.transform.position;
-        offset.y += 0.5f;
-        fire.transform.position = offset;
     }
 
     public void crashing () {
