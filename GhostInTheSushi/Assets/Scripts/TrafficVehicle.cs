@@ -22,6 +22,10 @@ public class TrafficVehicle : MonoBehaviour {
     private List<GameObject> StopStakeholders = new List<GameObject>();
     private List<GameObject> GoStakeholders = new List<GameObject>();
 
+    // If the vehicle doesn't move for 15 seconds then kill it to avoid traffic jams
+    private float suicideTimer = 0;
+    private static float SuicideTime = 15;
+
     // Use this for initialization
     void Awake () {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -35,7 +39,22 @@ public class TrafficVehicle : MonoBehaviour {
     }
 	
 	void FixedUpdate () {
-	    if (agent.hasPath && Vector3.Distance(transform.position, agent.destination) < ARRIVAL_DISTANCE)
+
+        // Kill self if not moving for awhile
+        if (agent.velocity.magnitude < 0.1f)
+        {
+            suicideTimer += Time.deltaTime;
+
+            if (suicideTimer >= SuicideTime)
+                // Delete the entire vehicle
+                Destroy(transform.gameObject);
+        }
+        else
+        {
+            suicideTimer = 0.0f;
+        }
+
+        if (agent.hasPath && Vector3.Distance(transform.position, agent.destination) < ARRIVAL_DISTANCE)
         {
             // Delete the entire vehicle
             Destroy(transform.gameObject);

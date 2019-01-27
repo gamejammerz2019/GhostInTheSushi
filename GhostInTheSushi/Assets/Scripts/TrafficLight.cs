@@ -43,7 +43,6 @@ public class TrafficLight : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered, lol!");
         var trafficAI = other.GetComponent<TrafficVehicle>();
 
         if (trafficAI && trafficAI.TrafficType == TargetAgentType)
