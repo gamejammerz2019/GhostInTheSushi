@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4695616692737302}
-  m_Layer: 31
+  m_Layer: 30
   m_Name: Objectivemarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33730866443836442}
   - component: {fileID: 23064724653097480}
   - component: {fileID: 135157108089329618}
-  m_Layer: 31
+  m_Layer: 30
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
