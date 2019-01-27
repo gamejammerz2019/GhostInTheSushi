@@ -366,6 +366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0300bda5ae682aa4bb5dc932fb48a67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  agent: {fileID: 195273851319069418}
   tag: FamilyMember
 --- !u!135 &135411386220623698
 SphereCollider:
