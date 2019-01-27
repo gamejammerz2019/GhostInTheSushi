@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 65436366668247996}
   - component: {fileID: 54662862026944284}
   m_Layer: 0
-  m_Name: CarPrefab
+  m_Name: CarPrefab 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1963539380811220}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -28.946844, y: 33.46, z: -20.801025}
+  m_LocalPosition: {x: 17.452785, y: 31.63, z: -22.831036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4600396696762528}
@@ -120,7 +120,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 65314284ce457f54b8727d24ac27915d, type: 2}
+  - {fileID: 2100000, guid: b576da7d5592f4d489b79219b3643eb1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
