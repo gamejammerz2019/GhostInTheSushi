@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4161382806407150}
-  m_Layer: 31
+  m_Layer: 30
   m_Name: Ghostmarker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33442386897853862}
   - component: {fileID: 23910225995342114}
   - component: {fileID: 135127448749837848}
-  m_Layer: 31
+  m_Layer: 30
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
