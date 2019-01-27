@@ -167,7 +167,7 @@ GameObject:
   m_Layer: 0
   m_Name: Interior 3
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -327,7 +327,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 418113378}
   selectedCommands:
-  - {fileID: 418113391}
+  - {fileID: 418113379}
   variables:
   - {fileID: 418113384}
   description: 
@@ -523,7 +523,7 @@ MonoBehaviour:
   storyText: Excellent
   description: 
   character: {fileID: 684061802}
-  portrait: {fileID: 21300000, guid: 4c9b9dd386e409e41b252830d6540205, type: 3}
+  portrait: {fileID: 21300000, guid: a18ddaffd7e10f247b6c25906715ec73, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -723,7 +723,7 @@ MonoBehaviour:
     First we will kill you, then we will kill your family.
   description: 
   character: {fileID: 1024437685}
-  portrait: {fileID: 21300000, guid: 181db14f4ba29f34a9f0f9bffc625e23, type: 3}
+  portrait: {fileID: 21300000, guid: 3d6df745c93b1284ca284c39faa9a92e, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -844,7 +844,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7285d0c50b49438488ae9edcf468dbbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3aa5c6e3199d4764f8cd4423a22000c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -900,7 +900,7 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -1029,7 +1029,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 4c9b9dd386e409e41b252830d6540205, type: 3}
+  - {fileID: 21300000, guid: a18ddaffd7e10f247b6c25906715ec73, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1195,7 +1195,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 181db14f4ba29f34a9f0f9bffc625e23, type: 3}
+  - {fileID: 21300000, guid: 3d6df745c93b1284ca284c39faa9a92e, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1226,7 +1226,7 @@ GameObject:
   m_Layer: 0
   m_Name: Interior
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1546,7 +1546,7 @@ GameObject:
   m_Layer: 0
   m_Name: Interior 2
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1592,7 +1592,7 @@ GameObject:
   m_Layer: 0
   m_Name: Exterior
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
