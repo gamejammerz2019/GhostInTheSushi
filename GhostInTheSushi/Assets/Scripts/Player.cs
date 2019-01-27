@@ -14,7 +14,6 @@ public class Player : MonoBehaviour {
     public GameObject typhoon;
 
     private float heldTime = 0f;
-    private bool typhoonInCooldown = false;
     private float typhoonCooldownTime = 0f;
 
     // Start is called before the first frame update
@@ -60,7 +59,6 @@ public class Player : MonoBehaviour {
         if (Input.GetMouseButtonUp(0)) {
             if (heldTime > typhoonHoldTime) {
                 makeTyphoon();
-                typhoonInCooldown = true;
                 typhoonCooldownTime = Time.time;
             }
             heldTime = 0;
