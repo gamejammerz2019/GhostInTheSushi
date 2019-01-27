@@ -18,26 +18,27 @@ public class YakuzaGhost : MonoBehaviour
     void Start()
     {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        FamilyMember = GameObject.FindWithTag("FamilyMember");
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        var heading = FamilyMember.transform.position - agent.transform.position;
-        DistanceToFamily = heading.magnitude;
 
-        if (DistanceToFamily <= MaxDistance)
+        if (FamilyMember != null)
         {
-            agent.SetDestination(FamilyMember.transform.position);
-            agent.speed = FollowSpeed;
-            //YakuzaGhost.GetComponent<Animation>.Play("running");
-        }
-        else
-        {
-            agent.speed = 0;
-            //YakuzaGhost.GetComponent<Animation>.Play("idle");
+            var heading = FamilyMember.transform.position - agent.transform.position;
+            DistanceToFamily = heading.magnitude;
 
+            if (DistanceToFamily <= MaxDistance)
+            {
+                agent.SetDestination(FamilyMember.transform.position);
+                agent.speed = FollowSpeed;
+            }
+
+            return;
         }
+
+        agent.speed = 0;
     }
 
 }
