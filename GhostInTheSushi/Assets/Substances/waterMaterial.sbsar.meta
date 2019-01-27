@@ -77,6 +77,34 @@ ScriptedImporter:
       wrapMode: 0
       filterMode: 1
       aniso: 1
+    - textureName: waterMaterial - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - MetalSmooth
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: waterMaterial - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
     colorSpaceList:
     - outputName: baseColor
       bLinear: 0
@@ -101,5 +129,5 @@ ScriptedImporter:
       textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {fileID: 2100000, guid: 30b82f83af5fe214aba92ca01174aeda, type: 3}
+    material: {instanceID: 0}
     generatedTextures: []

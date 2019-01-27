@@ -76,6 +76,34 @@ ScriptedImporter:
       wrapMode: 0
       filterMode: 1
       aniso: 1
+    - textureName: Rice - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - MetalSmooth
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Rice - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
     colorSpaceList:
     - outputName: baseColor
       bLinear: 0
@@ -100,5 +128,5 @@ ScriptedImporter:
       textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {fileID: 2100000, guid: b54a9f2b8f62791429b57bb45d3fe59c, type: 3}
+    material: {instanceID: 0}
     generatedTextures: []

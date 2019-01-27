@@ -75,6 +75,34 @@ ScriptedImporter:
       wrapMode: 0
       filterMode: 1
       aniso: 1
+    - textureName: LPattern - roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - MetalSmooth
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: LPattern - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
     colorSpaceList:
     - outputName: baseColor
       bLinear: 0
