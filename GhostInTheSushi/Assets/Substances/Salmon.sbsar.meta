@@ -1,0 +1,104 @@
+fileFormatVersion: 2
+guid: 91b82ce1a65219743b68bd200611e9ef
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: Salmon/Salmon
+    400000: Salmon/Salmon/Transform
+    2100000: mat.Salmon
+    2300000: Salmon/Salmon/MeshRenderer
+    2800000: Salmon_baseColor
+    2800002: Salmon_normal
+    2800004: Salmon_metallic
+    2800006: Salmon_ambientOcclusion
+    2800008: Salmon_height
+    3300000: Salmon/Salmon/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: Salmon/Salmon/SphereCollider
+    100100000: Salmon
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Salmon
+    prototypeName: Salmon
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Salmon\" label=\"\" >\n  <presetinput identifier=\"Offset\"
+      uid=\"2786704325\" type=\"1\" value=\"0.066,0\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,ambientOcclusion,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: ambientOcclusion
+      alphaSource: ambientOcclusion
+    - outputName: any
+      alphaSource: any
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Salmon_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_ambientOcclusion
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_any
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Salmon_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: ambientOcclusion
+      bLinear: 1
+    - outputName: any
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {fileID: 2100000, guid: 91b82ce1a65219743b68bd200611e9ef, type: 3}
+    generatedTextures: []
