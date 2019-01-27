@@ -37,6 +37,10 @@ public class YakuzaGhost : MonoBehaviour
 
             return;
         }
+        else
+        {
+            FamilyMember = GameObject.FindWithTag("FamilyMember");
+        }
 
         agent.speed = 0;
     }
