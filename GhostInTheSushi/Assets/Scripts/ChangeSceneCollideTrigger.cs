@@ -9,6 +9,7 @@ public class ChangeSceneCollideTrigger : MonoBehaviour
     [SerializeField] public string loadLevel;
 
     public string tag = "House";
+    public int sceneNumberEnd = 3;
 
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
@@ -17,7 +18,7 @@ public class ChangeSceneCollideTrigger : MonoBehaviour
         if (other.gameObject.tag == tag)
         {
             
-            Application.LoadLevel(loadLevel);
+            SceneManager.LoadScene(sceneNumberEnd);
         }
     }
 }
