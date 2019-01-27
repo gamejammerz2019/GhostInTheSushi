@@ -13,7 +13,7 @@ public class OtherVehicleDetector : MonoBehaviour {
       
         var trafficAI = other.GetComponent<TrafficVehicle>();
 
-        if (trafficAI)
+        if (trafficAI && Vector3.Dot(transform.forward,other.transform.forward) > -0.5)
         {
             Vehicle.Stop(this.gameObject);
             vehicleInFront = trafficAI;

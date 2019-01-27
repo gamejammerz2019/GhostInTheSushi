@@ -1,3 +1,4 @@
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -52,5 +53,6 @@ crashlytics-build.properties
 GhostInTheSushi/ProjectSettings/ProjectVersion.txt
 
 #Ignore Fungus
-GhostInTheSushi/Assets/Fungus**
+GhostInTheSushi/Assets/Fungus*
+
 GhostInTheSushi/Assets/Allegorithmic

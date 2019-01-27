@@ -57,8 +57,11 @@ public class TrafficVehicle : MonoBehaviour {
             return;
 
         // Otherwise it's red, so hold a reference and wait for the light to change
-        this.trafficLight = trafficLight;
-        Stop(this.gameObject);
+        else if(Vector3.Dot(transform.forward, trafficLight.transform.forward) > -0.5)
+        {
+            this.trafficLight = trafficLight;
+            Stop(this.gameObject);
+        }
     }
 
     // Pass in a gameObject to say that gameObject wants the traffic vehicle to stop
