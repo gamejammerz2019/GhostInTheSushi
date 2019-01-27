@@ -12,17 +12,19 @@ public class Crashable : MonoBehaviour, IPointerClickHandler {
 
     public float crashDuration = 2.0f;
     public float initialSpin = 5.0f;
+    public float deathDelay = 30.0f;
 
     public GameObject fireParticles;
 
     public State state { get; private set; }
 
-    /* TODO #finish: use the navmesh agent instead? */
     private TrafficVehicle tv;
     private Rigidbody rb;
     private UnityEngine.AI.NavMeshAgent ag;
 
     private float crashTime;
+    private float initialSpeed;
+    private Vector3 initialDirection;
 
     void Start () {
         tv = GetComponent<TrafficVehicle>();
@@ -47,6 +49,8 @@ public class Crashable : MonoBehaviour, IPointerClickHandler {
 
         // add a fire.
         GameObject fire = (GameObject)Instantiate(fireParticles, transform.position, new Quaternion());
+        float secondsSinceDeath = Time.time - crashTime;
+        Destroy(fire, deathDelay - secondsSinceDeath);
     }
 
     public void crashing () {
@@ -59,17 +63,18 @@ public class Crashable : MonoBehaviour, IPointerClickHandler {
         }
 
         // dampen speed.
-        float velDamp = 0.2f;
-        float newVel = Mathf.Max(rb.velocity.magnitude - velDamp, 0f);
+        transform.Translate(Vector3.forward * Time.deltaTime * initialSpeed * (1 - crashFraction));
 
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, newVel);
-
-        // dampen rotation.
-        transform.Rotate(Vector3.up, initialSpin * (1 - crashFraction));
+        // dampen rotation -- via children, to avoid messing with our Vector3.forward.
+        foreach (Transform child in transform) {
+            child.Rotate(Vector3.up, initialSpin * (1 - crashFraction));
+        }
     }
 
     public void crash () {
         state = State.Crashing;
+
+        initialSpeed = ag.velocity.magnitude;
 
         // stop acting as an ai-based traffic vehicle.
         tv.enabled = false;
@@ -77,6 +82,9 @@ public class Crashable : MonoBehaviour, IPointerClickHandler {
 
         // record the time at which we crashed.
         crashTime = Time.time;
+
+        // destroy ourself after a delay.
+        Destroy(gameObject, deathDelay);
     }
 
     public void OnPointerClick (PointerEventData eventData) {
