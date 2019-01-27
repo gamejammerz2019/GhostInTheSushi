@@ -6,8 +6,6 @@ using System.IO;
 
 public class ChangeSceneCollideTrigger : MonoBehaviour
 {
-    [SerializeField] public string loadLevel;
-
     public string tag = "House";
     public int sceneNumberEnd = 3;
 

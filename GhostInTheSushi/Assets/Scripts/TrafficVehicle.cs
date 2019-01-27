@@ -30,6 +30,8 @@ public class TrafficVehicle : MonoBehaviour {
     public float WaitTime = 0.0f;
     public bool didWait = false;
 
+    public bool deleteAtEnd = true;
+
     // Use this for initialization
     void Awake () {
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -70,7 +72,7 @@ public class TrafficVehicle : MonoBehaviour {
             suicideTimer = 0.0f;
         }
 
-        if (agent.hasPath && Vector3.Distance(transform.position, agent.destination) < ARRIVAL_DISTANCE)
+        if (agent.hasPath && Vector3.Distance(transform.position, agent.destination) < ARRIVAL_DISTANCE && deleteAtEnd)
         {
             // Delete the entire vehicle
             Destroy(transform.gameObject);

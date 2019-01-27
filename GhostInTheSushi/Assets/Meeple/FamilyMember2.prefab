@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 114370607953179936}
   - component: {fileID: 65610999994001532}
   - component: {fileID: 54345733346202550}
+  - component: {fileID: 114977414729323362}
   m_Layer: 0
   m_Name: FamilyMember2
   m_TagString: FamilyMember
@@ -215,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1617215983108748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -100.82772, y: 69.74219, z: 60.763836}
+  m_LocalPosition: {x: -67.246475, y: 69.74219, z: -12.705105}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children:
   - {fileID: 4578035189683136}
@@ -598,8 +599,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.29, y: 0.69, z: 0.32}
-  m_Center: {x: 0.06, y: 0, z: 0}
+  m_Size: {x: 2.78, y: 0.69, z: 1.9}
+  m_Center: {x: 0.06, y: 0.52, z: 0}
 --- !u!95 &95680761073323120
 Animator:
   serializedVersion: 3
@@ -685,7 +686,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrafficType: 1
+  waitTimer: 0
   WaitTime: 5
+  didWait: 0
+  deleteAtEnd: 0
+--- !u!114 &114977414729323362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1617215983108748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1db1fc84d139434fbe5276b462f07f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tag: House
+  sceneNumberEnd: 3
 --- !u!135 &135625372424635086
 SphereCollider:
   m_ObjectHideFlags: 1
