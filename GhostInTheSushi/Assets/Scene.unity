@@ -325,7 +325,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 418113378}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 418113391}
   variables:
   - {fileID: 418113384}
   description: 
@@ -409,7 +410,7 @@ MonoBehaviour:
   storyText: Welcome to the most prestigious sushi resturant in Japan
   description: 
   character: {fileID: 619718542}
-  portrait: {fileID: 21300000, guid: c15e8942944b3b84ca917694a52079a5, type: 3}
+  portrait: {fileID: 21300000, guid: b90db679ffaa6ea4c8163f24ab4fc9c0, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -480,7 +481,7 @@ MonoBehaviour:
   storyText: Todays special, the delicious fugu
   description: 
   character: {fileID: 619718542}
-  portrait: {fileID: 21300000, guid: c15e8942944b3b84ca917694a52079a5, type: 3}
+  portrait: {fileID: 21300000, guid: b90db679ffaa6ea4c8163f24ab4fc9c0, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -520,7 +521,7 @@ MonoBehaviour:
   storyText: Excellent
   description: 
   character: {fileID: 684061802}
-  portrait: {fileID: 21300000, guid: a18ddaffd7e10f247b6c25906715ec73, type: 3}
+  portrait: {fileID: 21300000, guid: 4c9b9dd386e409e41b252830d6540205, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -719,7 +720,7 @@ MonoBehaviour:
   storyText: We have been poisoned by the chief, we must avenge our leader
   description: 
   character: {fileID: 1024437685}
-  portrait: {fileID: 21300000, guid: 3d6df745c93b1284ca284c39faa9a92e, type: 3}
+  portrait: {fileID: 21300000, guid: 181db14f4ba29f34a9f0f9bffc625e23, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -745,7 +746,7 @@ MonoBehaviour:
   storyText: 'I have spoiled the fugu, I must have mis-cut it '
   description: 
   character: {fileID: 619718542}
-  portrait: {fileID: 21300000, guid: c15e8942944b3b84ca917694a52079a5, type: 3}
+  portrait: {fileID: 21300000, guid: b90db679ffaa6ea4c8163f24ab4fc9c0, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -822,7 +823,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3aa5c6e3199d4764f8cd4423a22000c0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7285d0c50b49438488ae9edcf468dbbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -956,7 +957,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: c15e8942944b3b84ca917694a52079a5, type: 3}
+  - {fileID: 21300000, guid: b90db679ffaa6ea4c8163f24ab4fc9c0, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1007,7 +1008,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: a18ddaffd7e10f247b6c25906715ec73, type: 3}
+  - {fileID: 21300000, guid: 4c9b9dd386e409e41b252830d6540205, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1058,7 +1059,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 3d6df745c93b1284ca284c39faa9a92e, type: 3}
+  - {fileID: 21300000, guid: 181db14f4ba29f34a9f0f9bffc625e23, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
