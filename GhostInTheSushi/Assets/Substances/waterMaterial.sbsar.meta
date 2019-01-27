@@ -4,25 +4,24 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: waterMaterial/waterMaterial
     400000: waterMaterial/waterMaterial/Transform
-    2100002: waterMaterial
+    2100000: mat.waterMaterial
     2300000: waterMaterial/waterMaterial/MeshRenderer
-    2800010: waterMaterial - baseColor
-    2800012: waterMaterial - normal
-    2800014: waterMaterial - metallic
-    2800016: waterMaterial - ambientOcclusion
-    2800018: waterMaterial - height
+    2800000: waterMaterial_baseColor
+    2800002: waterMaterial_normal
+    2800004: waterMaterial_metallic
+    2800006: waterMaterial_ambientOcclusion
+    2800008: waterMaterial_height
     3300000: waterMaterial/waterMaterial/MeshFilter
     11400000: sbsar
     11400002: graph0
     13500000: waterMaterial/waterMaterial/SphereCollider
     100100000: waterMaterial
-    2186277476908879412: ImportLogs
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
-  version: 17
+  version: 13
   mGraphInstanceData:
   - graphLabel: waterMaterial
     prototypeName: waterMaterial
@@ -125,9 +124,10 @@ ScriptedImporter:
     targetSettingList:
     - label: 
       bLockRatio: 1
+      bHighQuality: 0
       textureWidth: 512
       textureHeight: 512
       textureFormat: 0
       bGenerateOnLoad: 1
-    material: {fileID: 2100002, guid: 30b82f83af5fe214aba92ca01174aeda, type: 3}
+    material: {instanceID: 0}
     generatedTextures: []
