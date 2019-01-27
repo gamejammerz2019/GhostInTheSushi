@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 195396804969621700}
   - component: {fileID: 65436366668247996}
   - component: {fileID: 54662862026944284}
+  - component: {fileID: 114898674526489668}
   m_Layer: 0
   m_Name: CarPrefab 2
   m_TagString: Untagged
@@ -210,6 +211,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrafficType: 0
+--- !u!114 &114898674526489668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1963539380811220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17dd5313eed53495ab1b32adc234e296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crashDuration: 2
+  initialSpin: 5
+  deathDelay: 30
+  fireParticles: {fileID: 1956197547661106, guid: f293a2dcc753a4a489fefe7f8f312d69,
+    type: 2}
 --- !u!195 &195396804969621700
 NavMeshAgent:
   m_ObjectHideFlags: 1
